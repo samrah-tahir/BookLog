@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookLog</title>
+    <link rel="icon" type="image/x-icon" href="img/book.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo"><img src="img/book.png" alt="" /></div>
+      <div class="add-book"><i class="fa-solid fa-circle-plus"></i>
+        <button type="button">Add Book</button>
+      </div>
+      <!-- <button type="button">Add Book</button> -->
+    </header>
+    <section id="book-log" class="section-p1">
+      <h3>Add your first book by clicking the plus button!</h4>
+        <div id="book-container">
+          <div class="sample-book">
+            <div class="sample-book-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="book-modal section-p1">
+          <h3>ADD BOOK</h3>
+
+          <div id="book-container">
+            <div class="sample-book">
+              <div class="sample-book-img">
+                <img src="" alt="">
+              </div>
+            </div>
+            <div class="add-book-options">
+              <div class="local-opt">
+                <input type="file" id="image-input" accept="image/*">
+                
+              </div>
+              <hr>
+              <div class="online-opt">
+                <button type="button">Search Online</button>
+              </div>
+            </div>
+          </div>
+         
+          <form class="book-desc">
+            <input type="text" name="book-title" placeholder="Book Title*">
+            <input type="text" name="book-author" placeholder="Book Author*">
+            <input type="text" name="pages" placeholder="Book No. of Pages*">
+            <input type="text" placeholder="Book Title*">
+            <div>
+              <input type="radio" value="read" id="read-status">
+              <label for="read-status">Read Status</label>
+            </div>
+            <button type="button" class="normal submit-book-btn">Save Book</button>
+        </form>
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="search-online-form section-p1">
+          <div>
+            <input required class="search-online_name" type="text" placeholder="Book">
+            <input required class="search-online_author" type="text" placeholder="Author">
+          </div>
+          <button class="search-online-book">Search</button>
+          <i class="fa-solid fa-xmark close"></i>
+          <div class="search-results">
+            <p>Such Empty...</p>
+            <!-- <div class="search_result">
+              <div  class="result-img"><img src="img/book.png" alt=""></div>
+              <div class="result-book-details">
+                <h5>Book Name</h5>
+                <p>Author</p>
+              </div> -->
+          </div>
+          <!-- <button class="add" type="button">Add</button> -->
+            <!-- <div class="search_result">
+              <div class="result-img"><img src="img/add.png" alt=""></div>
+              <div class="result-book-details">
+                <h5>Book Name</h5>
+                <p>Author</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div> 
+    </section>
+  </body>
+</html>
