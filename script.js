@@ -32,10 +32,11 @@
             uploaded_image = e.target.firstChild.firstChild.src;
             pages.value = 0;
             readStatus.checked = false;
+            addBookToDashboard();
+            modal.classList.remove('active')
         }
         
-        addBookToDashboard();
-        modal.classList.remove('active')
+        
     });
 
 
@@ -146,7 +147,7 @@
         const newBook = document.createElement('div');
         const bookDetails = document.createElement('div');
         const bookImg = document.createElement('div');
-        const bookTitle = document.createElement('h4');
+        const bookTitle = document.createElement('h5');
         const bookAuthor = document.createElement('p');
         const readStatusIndicator = document.createElement('div');
         const bookThumbnail = book.image;
@@ -224,8 +225,7 @@
             bookName.innerText = noRes.title;
 
             let authorName = document.createElement('p');
-            authorName.innerText = noRes.authors;
-
+            authorName.innerText = noRes.authors[0];
             resultBookDetails.appendChild(bookName);
             resultBookDetails.appendChild(authorName);
 

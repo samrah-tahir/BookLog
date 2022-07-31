@@ -52,8 +52,8 @@ header .add-book > button{
 #book-container .book{
     width: 100px;
     height: 221px;
-    text-overflow: ellipsis;
     position: relative;
+    text-align: center;
 }
 
 #book-container .sample-book{
@@ -73,6 +73,21 @@ header .add-book > button{
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+
+#book-container .book-details p{
+    font-size: 12px;
+}
+
+#book-container .book-details h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* font-size: 12px; */
 }
 
 #book-container .sample-book .sample-book-img{
